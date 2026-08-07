@@ -1,0 +1,130 @@
+.teamPerson {
+    justify-items: center;
+    display: grid;
+}
+.teamPerson span{
+    color: var(--clr-neutral-400);
+}
+.teamPerson p {
+    margin-top: 25px;
+    margin-bottom: 6px;
+      font-weight: var(--fw-semi-bold);
+}
+
+.around {
+    justify-content: space-between;
+}
+
+.teamHeading h2 {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+    padding: 0 0 25px 0;
+}
+
+.person {
+    padding: 20px 0;
+}
+
+.australiaTeam {
+    padding: 20px 0;
+}
+
+.mail{
+    font-size: 14px !important;
+    color: var(--clr-primary-400);
+}
+
+@media (min-width:768px) {
+
+    .teamHeading h2 {
+        font-size: var(--fs-400);
+        /* font-weight: var(--fw-bold); */
+        padding: 0 0 45px 0;
+    }
+
+    .teamPerson p {
+        /* font-size: 14px;
+        font-weight: var(--fw-bold); */
+                font-size: 8px;
+    }
+
+    .onlyimg {
+        height: auto;
+    }
+
+    .person:nth-child(odd) {
+        padding-top: 7rem;
+    }
+
+    .teamPerson span {
+        font-size: 13px;
+    }
+
+    .teamPerson a {
+        font-size: 10px;
+    }
+
+    .mainteam {
+        position: relative;
+    }
+
+    .extrabtn {
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+@media (min-width:992px) {
+    .teamHeading h2 {
+        font-size: var(--fs-700);
+        font-weight: var(--fw-semi-bold);
+    }
+
+    .teamPerson p {
+        font-size:11px;
+        /* font-weight: var(--fw-bold); */
+    }
+
+    .teamPerson span {
+        font-size: var(--fs-100);
+        font-weight: var(--fw-regular);
+    }
+}
+
+.sustainHeading h2 {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+    padding: 0 0 25px 0;
+}
+
+
+@media (min-width:1024px) {
+    .teamPerson a {
+        font-size: 12px;
+    }
+     .mail{
+    font-size: 13px !important;
+}
+.teamPerson p {
+        font-size:14px;
+    }
+
+}
+
+ 
+ 
+@media (min-width:1500px) {
+    .teamPerson a {
+        font-size: 16px;
+    }
+    .mail{
+    font-size: 16px !important;
+}
+.teamPerson p {
+        font-size:16px;
+        /* font-weight: var(--fw-bold); */
+    }
+
+}

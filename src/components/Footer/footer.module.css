@@ -1,0 +1,360 @@
+.foterBg {
+  padding: 50px 0;
+  background-color: var(--clr-primary-400);
+  color: #ffffff;
+}
+
+.headingUl {
+  padding: 40px 20px 0;
+}
+
+.headingUl ul {
+  margin: 0;
+  padding: 0;
+}
+
+.headingUl li {
+  list-style: none;
+  padding: 0;
+}
+
+.headingUl ul li {
+  padding: 8px 0;
+}
+
+.headingUl li a {
+  color: rgba(221, 221, 221, 0.87);
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: color 0.3s ease;
+}
+
+.headingUl li a:hover {
+  color: var(--clr-secondary-400);
+}
+
+/* Newsletter input */
+
+.fotertInput {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+}
+
+.inputstyle {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 105px 9px 12px;
+
+  color: #ffffff;
+  background-color: var(--clr-primary-400);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  outline: none;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.inputstyle::placeholder {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.inputstyle:focus {
+  border-color: var(--clr-secondary-400);
+  box-shadow: 0 0 0 3px rgba(255, 182, 37, 0.18);
+}
+
+.inputstyle:-webkit-autofill,
+.inputstyle:-webkit-autofill:active,
+.inputstyle:-webkit-autofill:focus {
+  -webkit-box-shadow:
+    0 0 0 40px var(--clr-primary-400) inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.fotertInputError {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  font-size: 12px;
+}
+
+.foterBtn {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+
+  min-height: 36px;
+  padding: 7px 14px;
+
+  border: none;
+  border-radius: 9px;
+}
+
+/* Social icons */
+
+.Sicons ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.Sicons ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sicons ul li a {
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.Sicons ul li a svg {
+  width: 20px !important;
+  height: 20px !important;
+  display: block;
+}
+
+.Sicons ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.Sicons ul li a svg path {
+  transition: fill 0.3s ease;
+}
+
+.Sicons ul li a:hover svg path {
+  fill: var(--clr-secondary-400);
+}
+
+/* Copyright */
+
+.copyRight {
+  padding: 1.406rem 0;
+  background-color: var(--clr-secondary-400);
+}
+
+.copyRight p {
+  color: var(--clr-neutral-100, #ffffff);
+}
+
+.mainCopy {
+  --gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+
+  font-size: 11px;
+}
+
+.copyContent span {
+  color: var(--clr-neutral-100, #ffffff);
+  font-weight: 500;
+}
+
+.copyContent a {
+  padding: 0;
+
+  color: var(--clr-neutral-100, #ffffff);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: color 0.3s ease;
+}
+
+.copyContent a:hover {
+  color: var(--clr-primary-400);
+}
+
+/* Privacy links */
+
+.privacy ul {
+  display: flex;
+  gap: var(--gap);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.privacy ul li a {
+  color: var(--clr-neutral-100, #ffffff);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: color 0.3s ease;
+}
+
+.privacy ul li a:hover {
+  color: var(--clr-primary-400);
+}
+
+/* Reusable button */
+
+.nvaBtn {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-secondary-400);
+
+  border-radius: 12px;
+  font-weight: var(--fw-semi-bold);
+  cursor: pointer !important;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.nvaBtn:hover {
+  color: var(--clr-primary-400);
+  background-color: var(--clr-secondary-300);
+}
+
+/* Logo */
+
+.footerLogo {
+  max-width: 100px;
+}
+
+.footerLogo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .mainCopy {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 992px) {
+  .headingUl {
+    padding: 0 20px;
+  }
+
+  .mainCopy {
+    font-size: var(--fs-50);
+  }
+
+  .foterBg {
+    padding: 90px 0;
+  }
+
+  .privacy ul li {
+    padding-top: 0;
+  }
+
+  .fotertInput {
+    max-width: 320px;
+  }
+}
+
+/* Large desktop */
+
+@media screen and (min-width: 1400px) {
+  .mainCopy {
+    font-size: var(--fs-100);
+  }
+
+  .footerLogo {
+    max-width: 150px;
+  }
+}
+
+/* Extra large desktop */
+
+@media screen and (min-width: 1600px) {
+  .mainCopy {
+    max-width: 1500px;
+  }
+
+  .fotertInput {
+    max-width: 300px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 575px) {
+  .Sicons ul {
+    gap: 8px;
+  }
+
+  .Sicons ul li a {
+    width: 29px;
+    height: 29px;
+  }
+
+  .Sicons ul li a svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .foterBg {
+    padding: 42px 0;
+  }
+
+  .headingUl {
+    padding: 28px 12px 0;
+  }
+
+  .fotertInput {
+    max-width: 100%;
+  }
+
+  .inputstyle {
+    min-height: 42px;
+    padding-right: 98px;
+    font-size: 13px;
+  }
+
+  .foterBtn {
+    min-height: 34px;
+    padding: 6px 12px;
+  }
+
+  .Sicons ul {
+    gap: 9px;
+  }
+
+  .Sicons ul li a {
+    width: 31px;
+    height: 31px;
+  }
+
+  .Sicons ul li a svg {
+    width: 18px;
+    height: 18px;
+  }
+}

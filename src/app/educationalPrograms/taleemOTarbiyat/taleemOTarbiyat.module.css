@@ -1,0 +1,18 @@
+.taleemOTarbiyatShapes h2 {
+    margin-bottom: 30px;
+}
+@media (min-width:992px) {
+    .taleemOTarbiyatShapes h2 {
+        margin-bottom: 40px;
+    }
+}
+@media (min-width:1200px) {
+    .taleemOTarbiyatShapes h2 {
+        margin-bottom: 50px;
+    }
+}
+@media (min-width:1600px) {
+    .taleemOTarbiyatShapes h2 {
+        margin-bottom: 60px;
+    }
+}

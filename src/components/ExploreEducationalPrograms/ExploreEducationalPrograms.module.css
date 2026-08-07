@@ -1,0 +1,75 @@
+/* .columnWrap{
+} */
+
+.ExplorHeading h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+.ExplorRow {
+  justify-content: space-between;
+}
+
+.cardText {
+  padding: 30px 15px;
+}
+
+.testbox:hover {
+  color: white;
+  transition: 0.5s;
+}
+.columnWrap a {
+  text-decoration: none;
+  color: inherit;
+}
+.testBoxWrap {
+  box-shadow: 1.5px 1.5px 25px 0px #00000014;
+  border-radius: 24px;
+  max-width: 480px;
+}
+
+.testBoxWrap:hover {
+  background-color: blueviolet;
+  transition: 0.5s;
+}
+.testBoxWrap:hover {
+  color: var(--clr-neutral-100);
+}
+
+@media (min-width: 768px) {
+  .ExplorHeading h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    padding: 0 0 45px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .ExplorHeading h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+    padding: 0 0 75px 0;
+  }
+
+  .testbox h3 {
+    font-weight: 600;
+  }
+
+  .testBoxWrap {
+    min-height: 455px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .testBoxWrap {
+    min-height: 480px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .testBoxWrap {
+    min-height: 535px;
+  }
+}

@@ -1,0 +1,29 @@
+.StoryCardWrap {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+@media (min-width: 1200px) {
+    .StoryCardWrap {
+        padding: 0 ;
+      }
+      
+}
+
+
+.storiesCard  {
+    margin-bottom: 20px;
+}
+
+
+@media (min-width:768px) {
+    .storiesCard  {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width:1200px) {
+    .storiesCard  {
+        margin-bottom: 40px;
+    }
+}

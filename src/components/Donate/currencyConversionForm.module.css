@@ -1,0 +1,155 @@
+.raidus {
+    border-radius: 24px;
+}
+
+.minsBtn {
+    text-decoration: none;
+    border-radius: 24px !important;
+    padding: 5px 10px;
+    background-color: #26237D;
+    color: white;
+}
+
+.PaymentTapButtons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+
+.BankInfo {
+    padding: 80px 0 32px 11px;
+}
+
+
+.BankInfo strong {
+    font-size: 12px;
+}
+
+
+.BankInfo p {
+    max-width: 50ch;
+    display: flex;
+}
+
+.doorstepContent {
+    display: flex;
+    justify-content: center;
+}
+
+.doorstepContent p {
+    padding: 75px 0 40px;
+}
+
+.emailAndContect strong {
+    padding: 0 10px;
+}
+
+.backCotent p span {
+    min-width: 165px;
+}
+
+.BankInfoHeading h4{
+    font-size: var(--fs-200);
+    font-weight: var(--fw-semi-bold);
+    padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .BankInfo strong {
+        font-size: 16px;
+    }
+
+    .PaymentTapButtons {
+        flex-direction: row;
+    }
+
+    .backCotent p span {
+        min-width: 165px;
+    }
+
+    .contentCenter {
+        justify-content: center;
+    }
+
+    .emailAndContect p {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+.backCotent p span {
+    min-width: 195px;
+}
+}
+
+
+
+
+/* Card Styling */
+.card { 
+    border: 1px solid var(--clr-neutral-100);
+    border-radius: 24px; 
+    text-align: center; 
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color:var(--clr-neutral-100);
+    box-shadow: 1.5px 1.5px 25px 0px #00000014;
+    }
+  
+  /* Radio Button Styling */
+  .radioBtn {
+    display: none;
+  }
+  
+  .radioBtn:checked + .label {
+    color: white; /* Purple border when selected */
+    background-color: #7f57f5; /* Light purple background */
+    box-shadow: 0 4px 8px rgba(127, 87, 245, 0.3);
+    border-radius: 24px;
+  }
+  
+  /* Label Styling */
+  .label {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 0px;
+    /* height: 210px; */
+  }
+  
+  .label h3 {
+    font-size: 1rem; 
+    margin: 10px 0;
+  }
+  
+  .label p {
+    font-size: 0.9rem; 
+    margin: 0;
+  }
+  
+  /* Icon Styling */
+  .icon {
+    font-size: 2rem;
+    color: #7f57f5;
+    margin-bottom: 10px;
+  }
+
+  .icon{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon svg{
+    padding: 0 0 10px 0;
+  }
+
+
+  .EmailAndWhatsapp{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  

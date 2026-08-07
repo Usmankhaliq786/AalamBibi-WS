@@ -1,0 +1,35 @@
+{
+  "name": "aalambibi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:dev": "env-cmd -f .env.dev next build",
+    "build:qa": "env-cmd -f .env.qa next build",
+    "build:stg": "env-cmd -f .env next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tamtamchik/exchanger": "^3.0.0",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "formik": "^2.4.6",
+    "framer-motion": "^11.11.10",
+    "next": "^14.2.35",
+    "nodemailer": "^6.9.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-toastify": "^10.0.6",
+    "sharp": "^0.33.5",
+    "swiper": "^11.1.14",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/yup": "^0.29.14",
+    "env-cmd": "^10.1.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15"
+  }
+}

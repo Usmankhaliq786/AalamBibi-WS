@@ -1,0 +1,57 @@
+.top_static_section {
+    text-align: center;
+    padding-top: 6.2em;
+    padding-bottom: 3.2em;
+  }
+.VolunteerFrom h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+}
+.nvaBtn {
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-neutral-100);
+  border-radius: 12px;
+  font-weight: var(--fw-semi-bold);
+}
+
+
+
+.internHeading h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+.internWrap{
+  margin-bottom: 10px;
+}
+
+@media (min-width:768px) {
+
+  .internWrap{
+    margin-bottom: 20px;
+  }
+
+  .internHeading h2 {
+       font-size: var(--fs-400);
+       font-weight: var(--fw-bold);
+       padding: 20px 0 25px 0;
+   }
+}
+
+@media (min-width: 992px) {
+
+  .internHeading h2 {
+       font-size: var(--fs-700);
+       font-weight: var(--fw-semi-bold);
+       padding: 40px 0 20px 0;
+   }
+  } 
+
+  @media (min-width:1440px) {
+
+    .internWrap{
+      margin-bottom: 30px;
+    }
+  }

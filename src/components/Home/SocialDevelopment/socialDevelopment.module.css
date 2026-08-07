@@ -1,0 +1,337 @@
+.mainWrapper {
+  --fs: 14px;
+  --gap: 1rem;
+}
+
+@media (min-width: 425px) {
+  .mainWrapper {
+    --gap: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .mainWrapper {
+    --fs: var(--fs-100);
+  }
+}
+
+@media (min-width: 1920px) {
+  .mainWrapper {
+    --fs: var(--fs-200);
+    --gap: 2rem;
+  }
+}
+
+/* Left side layout */
+
+.leftWrapper {
+  display: grid;
+  gap: var(--gap);
+  grid-template-areas:
+    "content content"
+    "qualityDevelopment qualityDevelopment"
+    "communityDevelopment communityDevelopment"
+    "ethicalDevelopment ethicalDevelopment"
+    "charity charity";
+}
+
+@media (min-width: 768px) {
+  .leftWrapper {
+    grid-template-areas:
+      "content content"
+      "qualityDevelopment communityDevelopment"
+      "ethicalDevelopment charity";
+  }
+}
+
+/* Right side layout */
+
+.rightWrapper {
+  display: grid;
+  gap: var(--gap);
+  grid-template-areas:
+    "mission mission imageTwo"
+    "imageOne vision vision"
+    "coreValues coreValues coreValues";
+}
+
+@media (min-width: 768px) {
+  .rightWrapper {
+    grid-template-areas:
+      "mission mission imageTwo"
+      "imageOne vision vision"
+      "coreValues coreValues coreValues";
+  }
+}
+
+@media (min-width: 1440px) {
+  .rightWrapper {
+    grid-template-areas:
+      "vision vision imageOne"
+      "imageTwo mission mission"
+      "imageTwo coreValues coreValues";
+  }
+}
+
+/* Social development heading and paragraph */
+
+.contentWrapper {
+  grid-area: content;
+}
+
+.contentWrapper p {
+  margin: 0;
+  font-size: var(--fs);
+  line-height: 28px;
+}
+
+/* Social development cards */
+
+.socialCard {
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  text-align: center;
+
+  border-radius: var(--fs-400);
+  cursor: default;
+
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.socialCard p {
+  margin: 0;
+  text-align: center;
+}
+
+.socialCard:hover {
+  transform: translateY(-5px);
+  filter: brightness(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+@media (min-width: 1440px) {
+  .socialCard {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .socialCard {
+    padding: 2rem 2.5rem;
+  }
+}
+
+.qualityOverQuantity {
+  grid-area: qualityDevelopment;
+  background-color: var(--clr-secondary-400);
+}
+
+.communityDevelopment {
+  grid-area: communityDevelopment;
+  background-color: var(--clr-teriary-400);
+}
+
+.ethicalDevelopment {
+  grid-area: ethicalDevelopment;
+  background-color: var(--clr-primary-400);
+}
+
+@media (min-width: 768px) {
+  .ethicalDevelopment {
+    padding: 1rem 2.5rem;
+  }
+}
+
+.charity {
+  grid-area: charity;
+  background-color: var(--clr-accent-600);
+}
+
+/* Vision */
+
+.vision {
+  grid-area: vision;
+  padding: 1rem;
+
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-600);
+
+  border-radius: 12px;
+  font-size: var(--fs);
+  font-weight: var(--fw-regular);
+  text-align: center;
+}
+
+.vision h3,
+.vision p {
+  text-align: center;
+}
+
+.vision p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .vision {
+    padding: 1.5rem;
+    border-radius: var(--fs-400);
+  }
+}
+
+@media (min-width: 1920px) {
+  .vision {
+    padding: 1.5rem 3.5rem;
+  }
+}
+
+/* Images */
+
+.imageOne {
+  grid-area: imageOne;
+}
+
+.imageTwo {
+  grid-area: imageTwo;
+}
+
+/* Mission */
+
+.mission {
+  grid-area: mission;
+  padding: 1rem;
+
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-teriary-400);
+
+  border-radius: 12px;
+  font-size: var(--fs);
+  text-align: center;
+}
+
+.mission h3,
+.mission p {
+  text-align: center;
+}
+
+.mission p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .mission {
+    padding: 1.5rem;
+    border-radius: var(--fs-400);
+  }
+}
+
+@media (min-width: 1920px) {
+  .mission {
+    padding: 2.25rem;
+  }
+}
+
+/* Core Values */
+
+.coreValues {
+  grid-area: coreValues;
+  width: 100%;
+}
+
+.coreHeading {
+  margin: 0 0 1rem;
+  color: #222;
+  text-align: center;
+}
+
+.badgesWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.valueCard {
+  width: 100%;
+  min-height: 160px;
+  padding: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-secondary-400);
+
+  border-radius: 16px;
+  text-align: center;
+  cursor: default;
+
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.valueCard:nth-child(2) {
+  background-color: var(--clr-primary-400);
+}
+
+.valueCard:nth-child(3) {
+  background-color: var(--clr-accent-600);
+}
+
+.valueCard:hover {
+  background-color: var(--clr-teriary-400);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+.valueIcon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+
+  font-size: 24px;
+  line-height: 1;
+}
+
+.valueCard h5 {
+  margin: 0;
+  color: inherit;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-bold);
+}
+
+.valueCard p {
+  max-width: 230px;
+  margin: 0;
+
+  color: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .badgesWrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

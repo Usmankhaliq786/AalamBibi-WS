@@ -1,0 +1,50 @@
+.bgColor{
+    background-color: var(--clr-secondary-300);
+}
+
+
+.story h2{
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+    padding-bottom: 15px;
+}
+
+.nvaBtn{
+    background-color: var(--clr-secondary-400);
+    color: var(--clr-neutral-100);
+    border-radius: 12px;
+    font-weight: var(--fw-semi-bold);
+    padding: 7px 17px;
+    border: none;
+    margin: 20px 0;
+  }
+
+  .storyImg{
+    padding: 30px 0;
+  }
+
+
+  /* ---------    i will discuss with Shazib bhai  ----------  */
+
+  .ourImg{
+    height: auto;
+  }
+
+  @media (min-width:992px) {
+
+    .story h2{
+        font-size: var( --fs-800);
+        font-weight: var(--fw-semi-bold);
+    }
+    .nvaBtn{
+        padding: 12px 30px;
+    }
+    .leftColumn{
+        padding: 0 23px 0 0;
+    }
+
+    .rightColumn{
+        padding: 0 0 0 60px;
+    }
+  }
+

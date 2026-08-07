@@ -1,0 +1,19 @@
+.CategoriesWrap input {
+    border-color: var(--clr-teriary-400);
+}
+
+.formField {
+    position: relative;
+}
+
+.formField svg {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+
+.inputwraper{
+    padding-bottom: 60px;
+}
+
+

@@ -1,0 +1,30 @@
+.form_item {
+  margin-bottom: 15px;
+}
+
+.form_label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.select_field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select_field:focus {
+  outline: none;
+}
+
+.error_field {
+  border-color: red;
+}
+
+.error_message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

@@ -1,0 +1,24 @@
+.form_item {
+  margin-bottom: 15px;
+}
+
+.text_field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.text_field:focus {
+  outline: none;
+}
+
+.error_field {
+  border-color: red;
+}
+
+.error_message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

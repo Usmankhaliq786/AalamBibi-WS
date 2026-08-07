@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+}
+
+.slide {
+  position: relative;
+}
+
+.bannerWrapper {
+  position: relative;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.donateBtn {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform: translate(-0%, -0%);
+  z-index: 10;
+  display: inline-block;
+  transition: transform 0.3s ease;
+} 
+
+
+
+@media screen and (min-width: 768px) {
+.bannerBtn{
+    height: 90px;
+    width: 118px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.bannerBtn{
+           height: 100px;
+        width: 131px;
+}
+}
+
+
+
+@media screen and (min-width: 1400px) {
+.bannerBtn{
+    height: 154px;
+    width: 202px;
+}
+}

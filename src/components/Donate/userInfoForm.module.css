@@ -1,0 +1,22 @@
+.VolunteerFrom label {
+  text-align: left !important;
+}
+.VolunteerFrom h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+}
+.nvaBtn {
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-neutral-100);
+  border-radius: 12px;
+  font-weight: var(--fw-semi-bold);
+}
+
+.nvaBtn:hover {
+  color: var(--clr-neutral-100) !important;
+  background-color: var(--clr-primary-400) !important;
+}
+.department {
+  position: absolute;
+  left: 0;
+}

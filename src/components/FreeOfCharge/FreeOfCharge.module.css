@@ -1,0 +1,102 @@
+.FreOfCharge h2 {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+    padding: 0 0 25px 0;
+  }
+
+.customCard {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* background-color: #f5f7ff;  */
+    background-color: #F4F4FF; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.customCard:hover{
+    background-color: var(  --clr-teriary-400);
+    color: var(--clr-neutral-100);
+}
+
+
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: var(  --clr-teriary-400) ;
+    border-radius: 15px; 
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.textContainer {
+    font-size: var(--fs-200);
+    font-weight: bold;
+} 
+
+.textContainer{
+    display: flex;
+    align-items: center;
+    min-height: 84px;
+    width: 298px;
+}
+
+
+
+
+@media (min-width:768px) {
+
+  .FreOfCharge h2 {
+      font-size: var(--fs-400);
+      font-weight: var(--fw-bold);
+  }
+}
+
+@media (min-width: 992px) {
+
+    .textContainer{
+        font-size: var(--fs-100);
+    }
+
+  .FreOfCharge h2 {
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+  }
+} 
+
+@media (min-width: 1200px) {
+
+    .iconContainer {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    .customCard {
+        padding: 10px;
+    }
+
+    .textContainer{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .iconContainer {
+        width: 64px;
+        height: 64px;
+        margin-right: 15px;
+    }
+
+    .textContainer{
+        font-size: var(--fs-200);
+        font-weight: var( --fw-semi-bold);
+    }
+}

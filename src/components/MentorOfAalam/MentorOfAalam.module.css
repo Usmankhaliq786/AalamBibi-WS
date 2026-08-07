@@ -1,0 +1,127 @@
+.MunnuBhai{
+    background-color: var(  --clr-accent-600 );
+    color: rgb(255, 255, 255);
+    padding: 20px 15px;
+    border-radius: 12px;
+}
+
+.noorContent{
+    background-color: var(--clr-teriary-400) ;
+}
+
+.MunnuBhai h3{
+    font-size: 14px;
+    font-weight: var(--fw-semi-bold);
+}
+.MunnuBhai p{
+font-size: 15px;
+margin: 0;
+}
+
+.ImageNoor{
+    margin-bottom: 20px;
+}
+
+
+.mentorRow{
+    margin: 0 0 20px 0;
+}
+
+.noorHassan{
+
+    background-color: var(  --clr-teriary-400 );
+    color: rgb(255, 255, 255);
+    padding: 61px 61px;
+    border-radius: 12px;
+}
+
+.nor{
+    border-radius: 8px;
+}
+
+.socilImg{
+    margin-top: 20px;
+}
+
+.ImageNoor{
+    border-radius: 24px;
+}
+
+@media (min-width: 768px) {
+
+    .ImageNoor{
+        margin-bottom: 0;
+    }
+
+    .MunnuBhai h3{
+        font-size: var(--fs-100);
+        font-weight: var( --fw-semi-bold);
+    }
+
+    .socilImg{
+        margin-top: 0;
+    }
+
+    .socilImg{
+        display: flex;
+        align-items: center;
+    }
+    
+
+}
+
+@media (min-width: 992px) {
+
+ .MunnuBhai{
+            padding: 25px;
+    height: 100%;
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+}
+
+@media (min-width: 1200px) {
+ .MunnuBhai{
+            padding: 0 60px;}
+    .MunnuBhai h3{
+        font-size: var(  --fs-500);
+    }
+   }
+
+@media (min-width: 1400px) {
+
+    
+    .MunnuBhai p{
+        font-size: 19px;
+        } 
+
+    /* .MunnuBhai h3{
+        font-size: var(  --fs-500);
+    } */
+
+     /* .onlyMunnuBhai{
+        padding: 50px 15px; 
+    } */
+
+    /* .MunnuBhai{
+                padding: 60px 50px;
+    } */
+ 
+} 
+@media (min-width: 1600px) {
+     .MunnuBhai h3{
+        font-size: var(  --fs-700);
+    }
+    .MunnuBhai{
+        padding: 83px 80px; 
+    }
+    
+    .newMunnuBhai{
+        padding: 93px 80px;
+    }
+
+       .noorContent{
+        padding: 84px 80px; 
+    }
+} 

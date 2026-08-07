@@ -1,0 +1,114 @@
+/* .center{
+    justify-content: center;
+}
+
+ .SupportChapterHeading h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+@media (min-width:768px) {
+
+  .SupportChapterHeading h2 {
+      font-size: var(--fs-400);
+      font-weight: var(--fw-bold);
+      padding: 0 0 45px 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .SupportChapterHeading h2 {
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+      padding: 0 0 75px 0;
+  }
+}  */
+
+
+
+
+
+
+.ourManagemnet h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+.managemnetRow{
+  justify-content: center;
+}
+
+.managementContent{
+  padding: 25px 0;
+}
+
+.managementContent h5{
+  margin: 0;
+}
+
+.managementContent{
+  text-align: center;
+}
+
+.person{
+  display: flex;
+  justify-content:center ;
+}
+
+.teamPerson img{
+  
+  margin-inline: auto;
+
+}
+
+
+.navBtn{
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-neutral-100);
+  border-radius: 12px;
+  font-weight: var(--fw-semi-bold);
+  padding: 17px 40px ;
+  font-size: var(--fs-25);
+  line-height: 21px;
+  font-size: var( --fs-100);
+}
+.navBtn:hover{
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+}
+
+.newbtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+
+
+@media (min-width:768px) {
+
+  /* .managemnetRow{
+    justify-content: space-around;
+  } */
+
+  .ourManagemnet h2 {
+      font-size: var(--fs-400);
+      font-weight: var(--fw-bold);
+      padding: 0 0 35px 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .ourManagemnet h2 {
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+      padding: 20px 0 45px 0;
+  }
+
+}

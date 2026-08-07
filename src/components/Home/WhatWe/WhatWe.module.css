@@ -1,0 +1,359 @@
+.whatWeSection {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(245, 166, 35, 0.08),
+      transparent 35%
+    ),
+    #ffffff;
+}
+
+.successfulHeading {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.sectionLabel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+  padding: 8px 16px;
+
+  color: var(--clr-secondary-400);
+  background-color: rgba(245, 166, 35, 0.1);
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.successfulHeading h2 {
+  margin: 0 0 14px;
+
+  color: #222222;
+  font-size: clamp(32px, 4vw, 58px);
+  font-weight: var(--fw-bold);
+  line-height: 1.15;
+}
+
+.successfulHeading p {
+  max-width: 620px;
+  margin: 0 auto;
+
+  color: #6a6a6a;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* Main card */
+
+.card {
+  position: relative;
+  height: 100%;
+  min-height: 570px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 30px rgba(24, 31, 42, 0.07),
+    0 2px 8px rgba(24, 31, 42, 0.04);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+
+  width: 100%;
+  height: 5px;
+
+  background-color: var(--clr-secondary-400);
+}
+
+.educationCard::before {
+  background-color: var(--clr-secondary-400);
+}
+
+.foodCard::before {
+  background-color: var(--clr-teriary-400);
+}
+
+.healthCard::before {
+  background-color: var(--clr-accent-600);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(20, 20, 20, 0.12);
+
+  box-shadow:
+    0 24px 55px rgba(24, 31, 42, 0.14),
+    0 8px 18px rgba(24, 31, 42, 0.08);
+}
+
+/* Image area */
+
+.imageWrapper {
+  position: relative;
+  height: 285px;
+  flex-shrink: 0;
+
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.65s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.07);
+}
+
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.38),
+    rgba(0, 0, 0, 0.02) 55%
+  );
+
+  pointer-events: none;
+}
+
+.programTag {
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+  z-index: 2;
+
+  padding: 8px 14px;
+
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: 0.04em;
+}
+
+/* Content */
+
+.cardContent {
+  flex: 1;
+  padding: 26px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.cardContent h3 {
+  position: relative;
+
+  margin: 0 0 13px;
+  padding-bottom: 13px;
+
+  color: #202020;
+  font-size: 28px;
+  font-weight: var(--fw-bold);
+  line-height: 1.25;
+}
+
+.cardContent h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 42px;
+  height: 3px;
+
+  background-color: var(--clr-secondary-400);
+  border-radius: 999px;
+
+  transition: width 0.35s ease;
+}
+
+.foodCard .cardContent h3::after {
+  background-color: var(--clr-teriary-400);
+}
+
+.healthCard .cardContent h3::after {
+  background-color: var(--clr-accent-600);
+}
+
+.card:hover .cardContent h3::after {
+  width: 72px;
+}
+
+.cardContent p {
+  margin: 0;
+
+  color: #686868;
+  font-size: 15px;
+  line-height: 1.75;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Buttons */
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.readMoreButton {
+  min-height: 44px;
+  padding: 10px 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: #303030;
+  background-color: #f7f7f7;
+
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 12px;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: var(--fw-semi-bold);
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.readMoreButton span {
+  font-size: 18px;
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+.readMoreButton:hover {
+  color: #ffffff;
+  background-color: var(--clr-primary-400);
+  border-color: var(--clr-primary-400);
+  transform: translateY(-2px);
+}
+
+.readMoreButton:hover span {
+  transform: translateX(4px);
+}
+
+.btns > * {
+  flex-shrink: 0;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .successfulHeading {
+    margin-bottom: 35px;
+  }
+
+  .card {
+    min-height: 550px;
+  }
+
+  .imageWrapper {
+    height: 260px;
+  }
+
+  .cardContent {
+    padding: 22px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 575px) {
+  .successfulHeading {
+    margin-bottom: 28px;
+  }
+
+  .successfulHeading p {
+    font-size: 15px;
+  }
+
+  .card {
+    min-height: auto;
+    border-radius: 20px;
+  }
+
+  .imageWrapper {
+    height: 250px;
+  }
+
+  .cardContent {
+    padding: 20px;
+  }
+
+  .cardContent h3 {
+    font-size: 25px;
+  }
+
+  .btns {
+    flex-wrap: wrap;
+  }
+
+  .btns > * {
+    flex: 1 1 145px;
+    text-align: center;
+  }
+
+  .readMoreButton {
+    width: 100%;
+  }
+}

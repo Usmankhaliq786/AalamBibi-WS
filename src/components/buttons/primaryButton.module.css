@@ -1,0 +1,71 @@
+/* Primary Button */
+
+/* Primary Button */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11.5px 23.5px;
+  font-size: var(--fs-100);
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-neutral-100);
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: var(--fw-semi-bold);
+  line-height: 21px;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 0.35s ease,
+              color 0.35s ease;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background-color: var(--clr-secondary-400); /* same background */
+  color: var(--clr-primary-400);              /* only text color changes */
+}
+
+/* Click Effect */
+.btn:active {
+  opacity: 0.9;
+}
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  transform: none !important;
+  animation: none !important;
+  box-shadow: none !important;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background-color: var(--clr-primary-400);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Click Effect */
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Pulse Animation */
+@keyframes pulseBtn {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 18px rgba(255, 193, 7, 0.35);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+}

@@ -1,0 +1,17 @@
+.CategoriesWrap {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.categoriesSelection {
+    margin-bottom: 30px !important ;
+}
+@media (min-width:768px) {
+    .categoriesSelection {
+        margin-bottom: 50px !important ;
+    }
+}
+@media (min-width:1600px) {
+    .categoriesSelection {
+        margin-bottom: 60px !important ;
+    }
+}

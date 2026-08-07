@@ -1,0 +1,196 @@
+.backgroundSuccessful {
+  background-image: url(../../../../public/images/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.successfulHeading h2 {
+  margin: 0;
+  padding: 0 0 25px;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+}
+
+.successfulPahra {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.successfulBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Shared button styling */
+
+.updateBtn,
+.successfuldonateBtn {
+  position: relative;
+  min-width: 210px;
+  min-height: 56px;
+  padding: 16px 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  overflow: hidden;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: var(--fw-semi-bold);
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.updateBtn span,
+.successfuldonateBtn span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Sliding color layer */
+
+.updateBtn::before,
+.successfuldonateBtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  transform: translateX(-102%);
+
+  transition: transform 0.45s ease;
+}
+
+.updateBtn:hover::before,
+.successfuldonateBtn:hover::before {
+  transform: translateX(0);
+}
+
+/* Construction Update button */
+
+.updateBtn {
+  margin: auto;
+
+  color: var(--clr-secondary-400);
+  background-color: var(--clr-neutral-100);
+
+  border: 1px solid var(--clr-secondary-400);
+}
+
+.updateBtn::before {
+  background-color: var(--clr-secondary-400);
+}
+
+.updateBtn:hover {
+  color: var(--clr-neutral-100);
+  border-color: var(--clr-secondary-400);
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 26px rgba(255, 182, 37, 0.28);
+}
+
+/* Donate Now button */
+
+.successfuldonateBtn {
+  margin: auto;
+
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-secondary-400);
+
+  border: 1px solid var(--clr-secondary-400);
+}
+
+.successfuldonateBtn::before {
+  background-color: var(--clr-primary-400);
+}
+
+.successfuldonateBtn:hover {
+  color: var(--clr-neutral-100);
+  border-color: var(--clr-primary-400);
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+}
+
+/* Arrow animation */
+
+.buttonArrow {
+  font-size: 19px;
+  line-height: 1;
+
+  transition: transform 0.35s ease;
+}
+
+.updateBtn:hover .buttonArrow,
+.successfuldonateBtn:hover .buttonArrow {
+  transform: translateX(5px);
+}
+
+/* Click effect */
+
+.updateBtn:active,
+.successfuldonateBtn:active {
+  transform: translateY(-1px) scale(0.97);
+}
+
+/* Keyboard accessibility */
+
+.updateBtn:focus-visible,
+.successfuldonateBtn:focus-visible {
+  outline: 3px solid rgba(255, 182, 37, 0.35);
+  outline-offset: 4px;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .successfulHeading h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+  }
+
+  .successfulBtns {
+    flex-direction: row;
+  }
+
+  .updateBtn,
+  .successfuldonateBtn {
+    margin: 0;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+  .successfulPahra {
+    max-width: 105ch;
+    margin: auto;
+  }
+
+  .successfulHeading h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .updateBtn,
+  .successfuldonateBtn {
+    min-width: 225px;
+    padding: 17px 32px;
+  }
+}

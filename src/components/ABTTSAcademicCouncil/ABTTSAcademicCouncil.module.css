@@ -1,0 +1,53 @@
+.mainteam{
+  max-width: 1300px;
+}
+.ourManagemnet h2 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+.managemnetRow{
+  justify-content: center;
+  
+}
+.teamPerson span{
+  color: var(--clr-neutral-400);
+}
+.managementContent{
+  padding: 25px 0;
+}
+
+.managementContent h5{
+  margin: 0;
+  font-weight: var(--fw-semi-bold);
+}
+
+.managementContent{
+  text-align: center;
+}
+
+
+@media (min-width:768px) {
+
+  .managemnetRow{
+    /* justify-content: space-evenly; */
+    gap: 1.5rem;
+  }
+
+  .ourManagemnet h2 {
+      font-size: var(--fs-400);
+      font-weight: var(--fw-bold);
+      padding: 0 0 45px 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .ourManagemnet h2 {
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+      padding: 0 0 75px 0;
+  }
+}

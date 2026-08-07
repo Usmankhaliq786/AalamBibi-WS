@@ -1,0 +1,56 @@
+/* accordian.module.css */
+.wrapper { 
+  text-align: left;
+}
+
+
+.wrapper h2{
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper h2{
+    font-size: 1.5rem;
+  }
+  .wrapper { 
+    text-align: left;
+    padding: 20px;
+  }
+  
+}
+
+
+.accordian-body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.acc_body{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  gap: 1rem;
+}
+
+.image{
+  border-radius: 1.5rem;
+}
+
+.accordianImage {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.footercontent {
+  flex: 1;
+}
+
+@media (min-width: 992px) {
+  .acc_body{
+    flex-direction: row; 
+  }
+  
+}
+

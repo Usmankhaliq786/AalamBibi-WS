@@ -1,0 +1,27 @@
+.mainSwiperWraper{
+    background-image: url(../../../../public/images/bgImage.png);
+}
+
+.ScholarsHeading h2 {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semi-bold);
+    text-align: left;
+    
+}
+
+@media (min-width:768px) {
+
+    .ScholarsHeading h2 {
+        margin-bottom: -50px;
+        font-size: var(--fs-400);
+        font-weight: var(--fw-bold);
+    }
+  }
+  
+  @media (min-width: 992px) {
+  
+    .ScholarsHeading h2 {
+        font-size: var(--fs-700);
+        font-weight: var(--fw-semi-bold);
+    }
+  } 

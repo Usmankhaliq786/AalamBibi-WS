@@ -1,0 +1,285 @@
+.advisorySection {
+  padding: 55px 0;
+  overflow: hidden;
+}
+
+.mainTeam {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 34px;
+}
+
+.heading h2 {
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 48px;
+}
+
+.advisorySlider {
+  width: 100%;
+  padding: 10px 4px 44px;
+}
+
+.teamPerson {
+  width: 100%;
+  min-height: 360px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.07),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+
+  cursor: default;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.teamPerson:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255, 182, 37, 0.35);
+
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.12),
+    0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 255px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.onlyImg {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+.teamPerson:hover .onlyImg {
+  transform: scale(1.05);
+}
+
+.managementContent {
+  width: 100%;
+  flex: 1;
+
+  padding: 20px 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.managementContent h5 {
+  margin: 0 0 7px;
+
+  color: #222222;
+  font-size: 17px;
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.35;
+}
+
+.managementContent span {
+  color: var(--clr-neutral-400);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Navigation arrows */
+
+.advisorySlider :global(.swiper-button-prev),
+.advisorySlider :global(.swiper-button-next) {
+  width: 40px;
+  height: 40px;
+  top: 44%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background-color: var(--clr-secondary-400);
+
+  border-radius: 50%;
+
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.advisorySlider :global(.swiper-button-prev)::after,
+.advisorySlider :global(.swiper-button-next)::after {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.advisorySlider :global(.swiper-button-prev) {
+  left: 2px;
+}
+
+.advisorySlider :global(.swiper-button-next) {
+  right: 2px;
+}
+
+.advisorySlider :global(.swiper-button-prev):hover,
+.advisorySlider :global(.swiper-button-next):hover {
+  background-color: var(--clr-primary-400);
+  transform: scale(1.08);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination */
+
+.advisorySlider :global(.swiper-pagination) {
+  bottom: 6px;
+}
+
+.advisorySlider :global(.swiper-pagination-bullet) {
+  width: 9px;
+  height: 9px;
+  opacity: 0.4;
+  background-color: var(--clr-primary-400);
+}
+
+.advisorySlider :global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+  background-color: var(--clr-secondary-400);
+}
+
+@media (min-width: 768px) {
+  .advisorySection {
+    padding: 60px 0;
+  }
+
+  .heading {
+    margin-bottom: 42px;
+  }
+
+  .heading h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+  }
+
+  .teamPerson {
+    min-height: 375px;
+  }
+
+  .imageWrapper {
+    height: 265px;
+  }
+}
+
+@media (min-width: 992px) {
+  .advisorySection {
+    padding: 65px 0;
+  }
+
+  .heading {
+    margin-bottom: 48px;
+  }
+
+  .heading h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .teamPerson {
+    min-height: 390px;
+  }
+
+  .imageWrapper {
+    height: 275px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advisorySection {
+    padding: 45px 0;
+  }
+
+  .sliderWrapper {
+    padding: 0;
+  }
+
+  .advisorySlider {
+    padding: 8px 2px 40px;
+  }
+
+  .advisorySlider :global(.swiper-button-prev),
+  .advisorySlider :global(.swiper-button-next) {
+    display: none;
+  }
+
+  .heading {
+    margin-bottom: 28px;
+  }
+
+  .heading h2 {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 575px) {
+  .teamPerson {
+    min-height: 345px;
+    border-radius: 16px;
+  }
+
+  .imageWrapper {
+    height: 235px;
+  }
+
+  .managementContent {
+    padding: 18px 12px;
+  }
+
+  .managementContent h5 {
+    font-size: 16px;
+  }
+
+  .managementContent span {
+    font-size: 13px;
+  }
+}

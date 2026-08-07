@@ -1,0 +1,278 @@
+.volunteerSection {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.around {
+  justify-content: space-between;
+}
+
+.BecomebottomSpace {
+  padding-bottom: 0;
+}
+
+/* Left side */
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.onlyImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.becomTiles {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+  position: static;
+}
+
+.labelCard {
+  min-height: 118px;
+  padding: 18px 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  color: var(--clr-neutral-100);
+  border-radius: 20px;
+  text-align: center;
+  cursor: default;
+
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.labelEducation {
+  background-color: var(--clr-secondary-400);
+}
+
+.labelOutreach {
+  background-color: var(--clr-teriary-400);
+}
+
+.labelCreative {
+  background-color: var(--clr-primary-400);
+}
+
+.labelMedical {
+  background-color: var(--clr-accent-600);
+}
+
+.labelCard:hover {
+  background-color: #222222;
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+}
+
+.labelTitle {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.35;
+}
+
+.labelSubtitle {
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Right side */
+
+.formColumn {
+  display: flex;
+}
+
+.VolunteerFrom {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.07),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.sectionLabel {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 14px;
+
+  color: var(--clr-secondary-400);
+  background-color: rgba(255, 182, 37, 0.1);
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.VolunteerFrom h2 {
+  margin: 0 0 14px;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.2;
+}
+
+.VolunteerFrom p {
+  margin: 0 0 12px;
+  color: #666666;
+  font-size: var(--fs-100);
+  line-height: 1.7;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+
+  color: var(--clr-secondary-400);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-semi-bold);
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.readMore span {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.readMore:hover {
+  color: var(--clr-primary-400);
+  transform: translateY(-2px);
+}
+
+.readMore:hover span {
+  transform: translateX(4px);
+}
+
+.formWrapper {
+  width: 100%;
+  position: relative;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .labelCard {
+    min-height: 130px;
+    padding: 22px 16px;
+  }
+
+  .labelTitle {
+    font-size: 18px;
+  }
+
+  .VolunteerFrom h2 {
+    font-size: 30px;
+    font-weight: var(--fw-bold);
+  }
+
+  .VolunteerFrom {
+    padding: 32px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+  .leftColumn,
+  .formColumn {
+    min-width: 0;
+  }
+
+  .VolunteerFrom h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .VolunteerFrom p {
+    font-size: var(--fs-200);
+  }
+
+  .labelCard {
+    min-height: 145px;
+  }
+
+  .labelTitle {
+    font-size: 20px;
+  }
+
+  .BecomebottomSpace {
+    padding-bottom: 30px;
+  }
+}
+
+/* Large desktop */
+
+@media (min-width: 1400px) {
+  .leftColumn {
+    gap: 28px;
+  }
+
+  .becomTiles {
+    gap: 18px;
+  }
+
+  .labelCard {
+    min-height: 135px;
+    padding: 24px 18px;
+  }
+
+  .VolunteerFrom {
+    padding: 38px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 575px) {
+  .becomTiles {
+    grid-template-columns: 1fr;
+  }
+
+  .labelCard {
+    min-height: 105px;
+    border-radius: 16px;
+  }
+
+  .VolunteerFrom {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .VolunteerFrom h2 {
+    font-size: 30px;
+  }
+}

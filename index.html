@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form
+      id="PayFast_payment_form"
+      name="PayFast-payment-form"
+      method="post"
+      action="https://ipguat.apps.net.pk/Ecommerce/api/Transaction/PostTransaction"
+    >
+      Currency Code:
+      <input type="text" name="CURRENCY_CODE" value="PKR" /><br />
+      Merchant ID:
+      <input type="text" name="MERCHANT_ID" value="your-merchant-id" /><br />
+      Merchant Name:
+      <input type="text" name="MERCHANT_NAME" value="UAT Demo Merchant" /><br />
+      Token: <input type="text" name="TOKEN" value="your-token" /><br />
+      Success URL:
+      <input
+        type="text"
+        name="SUCCESS_URL"
+        value="http://merchant-site-example.com"
+      /><br />
+      Failure URL:
+      <input
+        type="text"
+        name="FAILURE_URL"
+        value="http://merchant-site-example.com"
+      /><br />
+      Checkout URL:
+      <input
+        type="text"
+        name="CHECKOUT_URL"
+        value="http://merchant-site-example.com"
+      /><br />
+      Customer Email:
+      <input
+        type="text"
+        name="CUSTOMER_EMAIL_ADDRESS"
+        value="some-email@example.com"
+      /><br />
+      Customer Mobile:
+      <input type="text" name="CUSTOMER_MOBILE_NO" value="00000000000" /><br />
+      Transaction Amount:
+      <input type="text" name="TXNAMT" value="transaction-amount" /><br />
+      Basket ID: <input type="text" name="BASKET_ID" value="basket-id" /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+</head>
+
+<body>
+    <script>
+        // Create the form dynamically
+        const form = document.createElement('form');
+        form.id = 'PayFast_payment_form';
+        form.name = 'PayFast-payment-form';
+        form.method = 'post';
+        form.action = 'https://ipguat.apps.net.pk/Ecommerce/api/Transaction/PostTransaction';
+
+        // Define form fields
+        const fields = [
+            { label: 'Currency Code:', name: 'CURRENCY_CODE', value: 'PKR' },
+            { label: 'Merchant ID:', name: 'MERCHANT_ID', value: 'your-merchant-id' },
+            { label: 'Merchant Name:', name: 'MERCHANT_NAME', value: 'UAT Demo Merchant' },
+            { label: 'Token:', name: 'TOKEN', value: 'your-token' },
+            { label: 'Success URL:', name: 'SUCCESS_URL', value: 'http://merchant-site-example.com' },
+            { label: 'Failure URL:', name: 'FAILURE_URL', value: 'http://merchant-site-example.com' },
+            { label: 'Checkout URL:', name: 'CHECKOUT_URL', value: 'http://merchant-site-example.com' },
+            { label: 'Customer Email:', name: 'CUSTOMER_EMAIL_ADDRESS', value: 'some-email@example.com' },
+            { label: 'Customer Mobile:', name: 'CUSTOMER_MOBILE_NO', value: '00000000000' },
+            { label: 'Transaction Amount:', name: 'TXNAMT', value: 'transaction-amount' },
+            { label: 'Basket ID:', name: 'BASKET_ID', value: 'basket-id' }
+        ];
+
+        // Add fields to the form
+        fields.forEach(field => {
+            const input = document.createElement('input');
+            input.type = 'hidden'; // Hidden inputs for silent submission
+            input.name = field.name;
+            input.value = field.value;
+            form.appendChild(input);
+        });
+
+        // Append form to the body
+        document.body.appendChild(form);
+
+        // Automatically submit the form
+        form.submit();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.mainWrapper{ 
+  overflow: hidden;
+}
+
+.formWrapper {
+  box-shadow: 1.5px 1.5px 25px 0px hsla(0, 0%, 0%, 0.08);
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+
+.completed {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+
+.step:hover {
+  background-color: #f1f1f1;
+}
+
+.donateNowHeading{
+  text-align: center;
+  padding: 24px 0  41px 0;
+}
+.contentWrapper{
+  display: grid;
+  gap: 1rem;
+}

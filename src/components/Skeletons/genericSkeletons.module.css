@@ -1,0 +1,30 @@
+.bgColor{
+    background-color: #F4F4FF ;
+}
+
+.founder h2{
+    font-size:var(--fs-400 );
+    font-weight: var(--fw-medium);
+    padding-bottom: 15px;
+}
+
+.founder p{
+    font-size: var(--fs-100);
+    font-weight: var(--fw-regular);
+    text-align: left;
+}
+ 
+
+ 
+  @media (min-width:992px) {
+
+    .founder h2{
+        font-size: var( --fs-800);
+        font-weight: var(--fw-semi-bold);
+    }
+     
+  }
+  
+  @media (min-width:1024px) {
+   
+  }

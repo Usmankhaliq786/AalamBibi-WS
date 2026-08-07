@@ -1,0 +1,73 @@
+.storiesSection h2  {  
+text-align: center;
+margin-bottom: 30px;
+}
+.storiesSection {
+    position: relative;
+    overflow: hidden;
+}
+.bg {
+    max-width: 120px;
+}
+.bg1 {
+    top: -17px;
+    left: -40px;
+}
+.bg2{
+    right: 0;
+    bottom: 0;
+}
+.viewMoreBtn {
+    margin-top: 15px;;
+}
+
+@media (min-width:992px) {
+    .bg {
+        max-width: 205px;
+    }
+    .bg1{
+        top: -55px;
+        left: -50px;
+    }
+    .bg2 {
+        max-width: 350px;
+    }
+}
+
+@media (min-width:1200px) {
+    .bg {
+        max-width: 360px;
+    }
+    .bg1{
+        top: -93px;
+        left: -93px;
+    }
+    .bg2{
+        max-width: 500px;
+    }
+    .storiesSection h2  {
+        margin-bottom: 50px;
+    }
+    .viewMoreBtn {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:1600px) {
+    .bg{
+        max-width: 470px;
+    }
+    .bg1{
+        top: -129px;
+        left: -115px;
+    }
+    .bg2{
+        max-width: unset;
+    }
+    .storiesSection h2  {
+        margin-bottom: 60px;
+        }
+        .viewMoreBtn {
+            margin-top: 60px;
+        }
+}
