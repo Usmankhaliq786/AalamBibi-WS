@@ -7,7 +7,7 @@ import OurManagement from "@/components/OurManagement/OurManagement";
 import MentorOfAalam from "@/components/MentorOfAalam/MentorOfAalam";
 import FoundationaBoard from "@/components/FoundationaBoard/FoundationaBoard";
 import AdvisoryBoard from "@/components/AdvisoryBoard/AdvisoryBoard";
-import ABTTSAcademicCouncil from "@/components/ABTTSAcademicCouncil/ABTTSAcademicCouncil";
+// import ABTTSAcademicCouncil from "@/components/ABTTSAcademicCouncil/ABTTSAcademicCouncil";
 
 import {
   aalamBibiFoundationBoard,
@@ -44,7 +44,7 @@ const OurTeam = () => {
 
         <AdvisoryBoard />
 
-        <ABTTSAcademicCouncil />
+        {/* <ABTTSAcademicCouncil /> */}
 
         <OurManagement />
       </section>
