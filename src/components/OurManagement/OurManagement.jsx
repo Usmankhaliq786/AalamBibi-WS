@@ -3,12 +3,15 @@ import managemnetOne from "../../../public/images/managemnetOne.png";
 import aftab from "../../../public/images/aftab.png";
 import sanaBatool from "../../../public/images/sanabatool.png";
 import samia from "../../../public/images/saima.png";
-import arooj from "../../../public/images/AroojTariq.png";
 import jawariaIrfan from "../../../public/images/JawariaIrfan.png";
 import tariq from "../../../public/images/tariq.png";
-import haroon from "../../../public/images/haroon.png";
 import haroonaTariq from "../../../public/images/haroonaTariq1.png";
 import noimg from "../../../public/images/noimg.png";
+
+// New Management Team Members
+import fakhraTahir from "../../../public/images/FakhraTahir.jpeg";
+import samaviaAslam from "../../../public/images/SamaviaAslam.jpeg";
+
 import Image from "next/image";
 import styles from "./OurManagement.module.css";
 
@@ -40,6 +43,7 @@ const OurManagement = () => {
           </div>
           */}
 
+          {/* Aftab Rabbani */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
@@ -89,6 +93,7 @@ const OurManagement = () => {
           </div>
           */}
 
+          {/* Saima Kanwal */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
@@ -114,28 +119,28 @@ const OurManagement = () => {
             </div>
           </div>
 
+          {/* Fakhra Tahir */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
-                src={arooj}
+                src={fakhraTahir}
                 className={styles.onlyimg}
                 width={211}
                 height={211}
-                alt="Arooj Tariq"
+                alt="Fakhra Tahir"
               />
 
               <div className={styles.managementContent}>
-                <h5>Arooj Tariq</h5>
+                <h5>Fakhra Tahir</h5>
                 <span>
-                  Admin & Human
-                  <span className="d-block">
-                    Resource Associate
-                  </span>
+                  Director of Education &
+                  <span className="d-block">Academics</span>
                 </span>
               </div>
             </div>
           </div>
 
+          {/* Jawaria Irfan */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
@@ -162,23 +167,25 @@ const OurManagement = () => {
             </div>
           </div>
 
+          {/* Samavia Aslam */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
-                src={haroon}
+                src={samaviaAslam}
                 className={styles.onlyimg}
                 width={211}
                 height={211}
-                alt="Haroon Ejaz"
+                alt="Samavia Aslam"
               />
 
               <div className={styles.managementContent}>
-                <h5>Haroon Ejaz</h5>
-                <span>Accounts Associate</span>
+                <h5>Samavia Aslam</h5>
+                <span>CHEAR Officer Cum HR</span>
               </div>
             </div>
           </div>
 
+          {/* Tariq Shahzad */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
@@ -196,6 +203,7 @@ const OurManagement = () => {
             </div>
           </div>
 
+          {/* Campus Incharge - unchanged */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
@@ -213,6 +221,7 @@ const OurManagement = () => {
             </div>
           </div>
 
+          {/* Haroona Tariq */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image

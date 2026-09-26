@@ -1,5 +1,15 @@
 export const successStoriesData = [
     {
+        id: 10,
+        title: "4th Position in Lahore Board | Proud Moment",
+        name: "Saba Majeed",
+        story: `We are incredibly proud to celebrate the outstanding achievement of our alumni, Saba Majeed, who secured 4th Position among girls in the Commerce Group in the Lahore Board!
+
+Her dedication, hard work, and commitment have made us truly proud. Seeing our students grow and achieve their dreams is what inspires us to keep going.
+
+Congratulations, Saba! May Allah bless you with even greater success ahead.`,
+    },
+    {
         id: 1,
         title: "Together, We Found Our Way",
         name: "Maria Fareed",
@@ -62,6 +72,5 @@ export const successStoriesData = [
         name: "Syeda Konain Shah",
         story: `From the modest streets of her neighborhood to the classrooms where she first learned to dream, Syeda Konain Shah’s story is one of growth, perseverance, and hope. I was just three years old when I started school at Alam Bibi Taleem-o-Tarbiat School. My father, a humble driver, and my mother, a devoted homemaker, gave me a loving home and a strong foundation, even in our modest circumstances. At Alam Bibi, I found more than just education—I found a second home, a place where my childhood unfolded with joy, creativity, and learning. My teachers nurtured me patiently, shaping my thoughts and ideas, guiding me gently like sculptors with clay. Every lesson, every activity, and every word of encouragement helped me grow into a confident and curious learner.
          I especially remember the mentorship of Dr. Farah Deeba Akram, whose guidance inspired me to aim higher and dream bigger. My school years were filled with art, craft, speech competitions, and co-curricular activities, all of which gave me confidence, honed my skills, and made learning a joyful adventure. I once dreamed of becoming a doctor, but as I progressed in my studies, I discovered a deep interest in Chartered Accountancy. Today, I pursue this path with dedication and passion, determined to achieve my goals and help others, just as I was supported and encouraged during the pivotal moments of my life`,
-    }
-]
-
+    },
+];
