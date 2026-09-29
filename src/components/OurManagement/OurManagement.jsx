@@ -6,11 +6,11 @@ import samia from "../../../public/images/saima.png";
 import jawariaIrfan from "../../../public/images/JawariaIrfan.png";
 import tariq from "../../../public/images/tariq.png";
 import haroonaTariq from "../../../public/images/haroonaTariq1.png";
-import noimg from "../../../public/images/noimg.png";
 
 // New Management Team Members
-import fakhraTahir from "../../../public/images/FakhraTahir.jpeg";
-import samaviaAslam from "../../../public/images/SamaviaAslam.jpeg";
+import fakhraTahirNew from "../../../public/images/FakhraTahirNew.png";
+import samaviaAslamNew from "../../../public/images/SamaviaAslamNew.png";
+import hinaNew from "../../../public/images/HINANew.png";
 
 import Image from "next/image";
 import styles from "./OurManagement.module.css";
@@ -93,6 +93,27 @@ const OurManagement = () => {
           </div>
           */}
 
+          {/* Fakhra Tahir */}
+          <div className={`col-auto ${styles.person}`}>
+            <div className={styles.teamPerson}>
+              <img
+  src="/images/FakhraTahirNew.png"
+  className={styles.onlyimg}
+  width="211"
+  height="211"
+  alt="Fakhra Tahir"
+/>
+
+              <div className={styles.managementContent}>
+                <h5>Fakhra Tahir</h5>
+                <span>
+                  Director of Education &
+                  <span className="d-block">Administration</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
           {/* Saima Kanwal */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
@@ -114,27 +135,6 @@ const OurManagement = () => {
                   <span className="d-block">
                     (Lahore Campus)
                   </span>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Fakhra Tahir */}
-          <div className={`col-auto ${styles.person}`}>
-            <div className={styles.teamPerson}>
-              <Image
-                src={fakhraTahir}
-                className={styles.onlyimg}
-                width={211}
-                height={211}
-                alt="Fakhra Tahir"
-              />
-
-              <div className={styles.managementContent}>
-                <h5>Fakhra Tahir</h5>
-                <span>
-                  Director of Education &
-                  <span className="d-block">Academics</span>
                 </span>
               </div>
             </div>
@@ -171,7 +171,7 @@ const OurManagement = () => {
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
-                src={samaviaAslam}
+                src={samaviaAslamNew}
                 className={styles.onlyimg}
                 width={211}
                 height={211}
@@ -203,11 +203,11 @@ const OurManagement = () => {
             </div>
           </div>
 
-          {/* Campus Incharge - unchanged */}
+          {/* Campus Incharge */}
           <div className={`col-auto ${styles.person}`}>
             <div className={styles.teamPerson}>
               <Image
-                src={noimg}
+                src={hinaNew}
                 className={styles.onlyimg}
                 width={211}
                 height={211}
